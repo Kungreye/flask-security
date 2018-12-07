@@ -245,7 +245,7 @@ def confirm_email(token):
     do_flash(*get_message(msg))
 
     return redirect(get_url(_security.post_confirm_view,
-                            type='confirmed', email=form.user.email) or
+                            type='confirmed', email=user.email) or
                     get_url(_security.login_url))
 
 
