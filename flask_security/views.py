@@ -27,7 +27,7 @@ from .utils import url_for_security as url_for
 from .utils import config_value, do_flash, get_message, \
     get_post_login_redirect, get_post_logout_redirect, \
     get_post_register_redirect, get_url, login_user, logout_user, \
-    slash_url_suffix
+    slash_url_suffix, get_post_action_redirect
 
 # Convenient references
 _security = LocalProxy(lambda: current_app.extensions['security'])
